@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:   
-  annotations:  
+metadata:
+  annotations:
     tad.gitops.set/image: ".spec.template.spec.containers[0].image"
     tad.gitops.get/image: ".spec.template.spec.containers[0].image"
     tad.gitops.set/replicas: ".spec.replicas"
-    tad.gitops.get/replicas: ".spec.replicas" 
+    tad.gitops.get/replicas: ".spec.replicas"
   name: c1
-  namespace:  zdemo-ns
+  namespace: zdemo-ns
 spec:
-  replicas: 1 
-  template: 
+  replicas: 3
+  template:
     spec:
       containers:
-      - image: quay.io/jduimovich0/bootstrap
-        name: container-image  
+        - image: quay.io/jduimovich0/bootstrap
+          name: container-image
