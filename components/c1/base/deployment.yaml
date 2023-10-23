@@ -14,7 +14,7 @@ metadata:
   name: c1
   namespace: zdemo-ns
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app.kubernetes.io/instance: c1
