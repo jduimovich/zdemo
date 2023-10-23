@@ -9,7 +9,7 @@ metadata:
   name: c1
   namespace: zdemo-ns
 spec:
-  replicas: 4
+  replicas: 1
   template:
     spec:
       containers:
