@@ -9,7 +9,7 @@ metadata:
   name: c12
   namespace: zdemo-ns
 spec:
-  replicas: 5
+  replicas: 1
   template:
     spec:
       containers:
